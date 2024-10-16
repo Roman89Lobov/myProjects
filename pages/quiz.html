@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квиз</title>
+  <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+<header>
+  <button id="backButton">Назад</button>
+  <h1>Квиз</h1>
+  <button id="themeToggle">Переключение темы</button>
+</header>
+
+<main>
+  <nav>
+    <ul id="quizCategories">
+      <li><button data-category="capitals">Столицы мира</button></li>
+      <li><button data-category="football">Футбольные клубы</button></li>
+      <li><button data-category="marvel">Кинематографическая вселенная Marvel</button></li>
+    </ul>
+  </nav>
+
+  <div id="scoreBoard">
+    <p id="correctCounter">Правильные ответы: 0</p>
+    <p id="incorrectCounter">Неправильные ответы: 0</p>
+  </div>
+
+  <section id="quizSection">
+    <h2 id="question"></h2>
+    <div id="answers">
+      <!-- Кнопки ответов будут динамически вставлены сюда -->
+    </div>
+    <button id="nextQuestion" style="display:none;">Следующий вопрос</button>
+  </section>
+</main>
+
+<script src="../js/quiz.js"></script>
+</body>
+</html>

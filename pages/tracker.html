@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список задач</title>
+  <link rel="stylesheet" href="../css/tracker.css">
+</head>
+<body>
+  <header>
+    <button id="backButton">← Назад</button>
+    <h1>Список Задач</h1>
+    <button id="themeToggle">Переключение темы</button>
+  </header>
+
+  <main>
+
+    <div id="taskForm">
+      <input type="text" id="taskInput" placeholder="Введите новую задачу">
+      <select id="prioritySelect">
+        <option value="low">Низкий</option>
+        <option value="medium">Средний</option>
+        <option value="high">Высокий</option>
+      </select>
+      <input type="date" id="deadlineInput">
+      <button id="addTaskButton">Добавить задачу</button>
+    </div>
+
+
+    <div id="themeSwitcher">
+      <button data-theme="default-theme">Основная</button>
+      <button data-theme="dark-theme">Тёмная</button>
+      <button data-theme="theme1">Тема 1</button>
+      <button data-theme="theme2">Тема 2</button>
+      <button data-theme="theme3">Тема 3</button>
+      <button data-theme="theme4">Тема 4</button>
+    </div>
+
+    <!-- Фильтр статуса задач -->
+    <div>
+      <label for="filterStatus">Фильтр задач: </label>
+      <select id="filterStatus">
+        <option value="all">Все задачи</option>
+        <option value="completed">Выполненные</option>
+        <option value="incomplete">Не выполненные</option>
+      </select>
+    </div>
+
+    <select id="sortCriteria">
+      <option value="date">По дате добавления</option>
+      <option value="priority">По приоритету</option>
+    </select>
+
+    <div>
+      <p>Завершено задач: <span id="completedCount">0</span></p>
+      <p>Задачи в ожидании: <span id="pendingCount">0</span></p>
+    </div>
+
+    <ul id="taskList"></ul>
+
+  </main>
+
+  <footer>
+<!--    <p>&copy; 2024 Мои работы</p>-->
+  </footer>
+
+  <script src="../js/tracker.js"></script>
+
+</body>
+</html>

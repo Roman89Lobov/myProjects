@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px 0; /* Отступы сверху и снизу */
+  font-size: 2rem;
+}
+
+/* Стили для карты */
+#map {
+  width: 80%;
+  height: 500px;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Добавляем отступ сверху */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Кнопка смены темы */
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#themeToggle:hover {
+  background-color: #555;
+}
+
+/* Кнопка назад влево */
+#backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#backButton:hover {
+  background-color: #555;
+}
+
+/* Стили для формы */
+#destinationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+#destinationForm label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#destinationForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+#destinationForm button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#destinationForm button:hover {
+  background-color: #218838;
+}
+
+/* Стили для списка пунктов назначения */
+#destinationList {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+#destinationList li {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Темная тема */
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.dark-theme #map {
+  border-color: #454d55;
+}
+
+.dark-theme #destinationForm {
+  background-color: #444;
+  border-color: #555;
+}
+
+.dark-theme #destinationForm input {
+  background-color: #666;
+  color: white;
+}
+
+.dark-theme #destinationList li {
+  background-color: #666;
+}

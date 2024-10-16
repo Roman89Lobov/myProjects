@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея изображений</title>
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body class="default-theme">
+<header>
+  <button id="backButton">Назад на главную</button>
+  <h1>Галерея Изображений</h1>
+  <button id="themeToggle">Переключить тему</button>
+</header>
+
+<main>
+  <div class="gallery-container">
+    <button id="prevButton">←</button>
+    <div class="image-carousel">
+      <img src="../img/624ee0aef1d63.JPG" alt="Image 1" class="carousel-image">
+      <img src="../img/6249564cda086.jpg" alt="Image 2" class="carousel-image">
+      <img src="../img/62494815c3cc5.jpg" alt="Image 3" class="carousel-image">
+    </div>
+    <button id="nextButton">→</button>
+  </div>
+
+  <div class="gallery-controls">
+    <input type="file" id="addImage" accept="image/*">
+    <button id="deleteImage">Удалить</button>
+  </div>
+
+  <div id="zoomedImageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="zoomedImg">
+    <div id="modalNav">
+      <button id="prevZoomedImage" class="modal-nav-btn">←</button>
+      <button id="nextZoomedImage" class="modal-nav-btn">→</button>
+    </div>
+  </div>
+</main>
+
+<script src="../js/gallery.js"></script>
+</body>
+</html>

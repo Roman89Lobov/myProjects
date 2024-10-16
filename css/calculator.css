@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.calculator {
+  background-color: var(--calc-bg);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px; /* Фиксированная ширина */
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+input#display {
+  width: 95%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--btn-active);
+}
+
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --calc-bg: #fff;
+  --input-bg: #eee;
+  --input-text: #000;
+  --btn-bg: #ddd;
+  --btn-text: #000;
+  --btn-active: #bbb;
+}
+
+.dark-theme {
+  --bg-color: #333;
+  --text-color: #fff;
+  --calc-bg: #444;
+  --input-bg: #555;
+  --input-text: #fff;
+  --btn-bg: #666;
+  --btn-text: #fff;
+  --btn-active: #888;
+}
+
+#backButton {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 50px; /* Добавлен отступ от края */
+}
+
+#backButton:hover {
+  color: var(--btn-active);
+}
+
+#themeToggle {
+
+}
